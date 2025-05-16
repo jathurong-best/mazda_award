@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+#swiper1 .swiper-slide-active {
+    @apply mt-20;
+}
+
+.context-wrapper:hover .context {
+    @apply h-full transition-all duration-300 ease-in-out;
+}

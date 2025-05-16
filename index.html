@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mazda</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="./vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./vendor/lity.min.css">
+</head>
+
+<body>
+    <section
+        class="banner min-h-[100vh] w-full relative py-8 bg-[url('./assets/images/banner/banner-bg.png')] bg-cover bg-center flex flex-col items-center justify-center">
+        <div class="w-4/5 h-full mx-auto text-center ">
+            <div class="logo flex ">
+                <img src="./assets/images/banner/logo_mazda.png" alt="mazda Logo"
+                    class="w-auto h-[40px] pr-8 border-r-1 border-white">
+                <img src="./assets/images/banner/logo_mirum.png" alt="mirum Logo" class="w-auto h-[40px] px-8">
+            </div>
+            <div class="text-container mt-8">
+                <h1 class="text-white text-[36px] font-normal">Mazda Thailand website</h1>
+                <p class="text-white text-[130px] mt-2 w-2/3 mx-auto font-medium">Drive the joy to your life</p>
+            </div>
+            <div class="text-container mt-8 mx-auto flex justify-center">
+                <div class="vdo w-[320px] h-[60px] rounded-4xl bg-white mx-2">
+                    <a class="watch h-full flex justify-center" href="" data-lity>
+                        <div class="vdo-btn flex justify-center items-center">
+                            <p class="vdo-text mr-4 text-[30px] font-normal">Watch case VDO</p>
+                            <img class="vdo-btn-arrow" src="./assets/images/icons/arrow.png" alt="arrow" />
+                        </div>
+                    </a>
+                </div>
+
+                <div class="vdo w-[320px] h-[60px] rounded-4xl bg-none border-1 border-white mx-2">
+                    <a class="watch h-full flex justify-center" target="_blank" href="">
+                        <div class="vdo-btn flex justify-center items-center">
+                            <p class="vdo-text mr-4 text-white text-[30px] font-normal">Visit site</p>
+                            <img class="vdo-btn-arrow" src="./assets/images/icons/goto.png" alt="goto" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="w-full mx-auto mt-8 overflow-hidden">
+            <div class="swiper overflow-visible mt-8" id="swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide cursor-pointer">
+                        <img class="mx-auto w-full" src="./assets/images/banner/items-1.png" alt="">
+                    </div>
+                    <div class="swiper-slide cursor-pointer">
+                        <img class="mx-auto w-full" src="./assets/images/banner/items-2.png" alt="">
+                    </div>
+                    <div class="swiper-slide cursor-pointer">
+                        <img class="mx-auto w-full" src="./assets/images/banner/items-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        class="banner min-h-[100vh] w-full relative py-8 bg-[url('./assets/images/background/backgound-bg.png')] bg-cover bg-center flex flex-col items-center">
+        <div class="w-4/5 h-full mx-auto text-center ">
+            <div class="text-container mt-8">
+                <h1 class="text-white text-[36px] font-normal">Background</h1>
+                <p class="text-white text-[60px] mt-2 w-full mx-auto font-medium">
+                    Mazda is dedicated to enriching the
+                    customer experience
+                    at every touchpoint. Our goal is lifelong
+                    customer satisfaction, driven by these 3 core values.</p>
+            </div>
+        </div>
+        <div class="w-full mx-auto mt-8 overflow-hidden">
+            <div class="swiper overflow-visible mt-8 w-4/5" id="swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide cursor-pointer">
+                        <div class="context-wrapper relative">
+                            <img class="mx-auto w-full max-w-[540px]" src="./assets/images/background/img-background-1.png" alt="">
+                            <div class="context-text absolute bottom-[5%] left-[5%] flex items-center">
+                                <p class="text-white text-[36px] font-normal mr-4 -mt-2">asdasd</p>
+                                <img class="vdo-btn-arrow" src="./assets/images/icons/arrow.png" alt="arrow" />
+                            </div>
+                            <div class="context absolute h-0 w-full bottom-0 left-0 right-0 bg-[url('./assets/images/background/transparent-img.png')] bg-cover bg-center">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-slide cursor-pointer">
+                        <div class="context-wrapper relative">
+                            <img class="mx-auto w-full max-w-[540px]" src="./assets/images/background/img-background-2.png" alt="">
+                            <div class="context absolute h-0 w-full bottom-0 left-0 right-0 bg-[url('./assets/images/background/transparent-img.png')] bg-cover bg-center">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide cursor-pointer">
+                        <div class="context-wrapper relative">
+                            <img class="mx-auto w-full max-w-[540px]" src="./assets/images/background/img-background-3.png" alt="">
+                            <div class="context absolute h-0 w-full bottom-0 left-0 right-0 bg-[url('./assets/images/background/transparent-img.png')] bg-cover bg-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="./vendor/jquery.js"></script>
+<script src="./vendor/swiper-bundle.min.js"></script>
+<script src="./vendor/lity.min.js"></script>
+<script>
+    var swiper = new Swiper('#swiper1', {
+        slidesPerView: 1.5,
+        speed: 700,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    var swiper = new Swiper('#swiper2', {
+        slidesPerView: 3,
+        speed: 700,
+        spaceBetween: 30,
+        loop: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 1.5,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+                allowTouchMove: false,
+            },
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+</script>
+
+</html>
