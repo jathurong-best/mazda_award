@@ -2,9 +2,25 @@
 
 
 #swiper1 .swiper-slide-active {
-    @apply mt-20;
+    @apply xl:mt-20;
 }
 
 .context-wrapper:hover .context {
     @apply h-full transition-all duration-300 ease-in-out;
+}
+
+.context-wrapper:hover .context-text {
+    @apply z-20;
+}
+
+.context-wrapper:hover .arrows {
+    @apply xl:rotate-180 xl:-mt-[3.5px] transition-all duration-100 ease-in-out;
+}
+
+.context-wrapper:hover .hide-text {
+    @apply xl:h-auto xl:overflow-auto transition-all duration-300 ease-in-out;
+}
+
+#swiper4 .swiper-slide:nth-child(2n-1) {
+    @apply xl:mt-20;
 }

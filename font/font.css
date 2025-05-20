@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'MazdaTypeTH';
+    src: url('./MazdaTypeTH-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MazdaTypeTH';
+    src: url('./MazdaTypeTH-MediumItalic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MazdaTypeTH';
+    src: url('./MazdaTypeTH-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MazdaTypeTH';
+    src: url('./MazdaTypeTH-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MazdaTypeTH';
+    src: url('./MazdaTypeTH-Bold.otf') format('opentype');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MazdaTypeTH';
+    src: url('./MazdaTypeTH-BoldItalic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}

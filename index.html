@@ -6,37 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mazda</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="./font/font.css">
     <link rel="stylesheet" href="./vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="./vendor/lity.min.css">
 </head>
 
 <body>
     <section
-        class="banner min-h-[100vh] w-full relative py-8 bg-[url('./assets/images/banner/banner-bg.png')] bg-cover bg-center flex flex-col items-center justify-center">
-        <div class="w-4/5 h-full mx-auto text-center ">
+        class="banner font-[MazdaTypeTH] min-h-[100vh] w-full relative py-8 bg-[url('./assets/images/banner/banner-bg.png')] bg-cover bg-center flex flex-col items-center justify-center">
+        <div class="w-5/6 h-full mx-auto text-center ">
             <div class="logo flex ">
                 <img src="./assets/images/banner/logo_mazda.png" alt="mazda Logo"
-                    class="w-auto h-[40px] pr-8 border-r-1 border-white">
-                <img src="./assets/images/banner/logo_mirum.png" alt="mirum Logo" class="w-auto h-[40px] px-8">
+                    class="w-auto h-[31px] md:h-[40px] pr-8 border-r-1 border-white">
+                <img src="./assets/images/banner/logo_mirum.png" alt="mirum Logo"
+                    class="w-auto h-[31px] md:h-[40px] px-8">
             </div>
             <div class="text-container mt-8">
-                <h1 class="text-white text-[36px] font-normal">Mazda Thailand website</h1>
-                <p class="text-white text-[130px] mt-2 w-2/3 mx-auto font-medium">Drive the joy to your life</p>
+                <h1 class="text-white text-[24px] xl:text-[36px] font-normal">Mazda Thailand website</h1>
+                <p
+                    class="text-white text-[50px] leading-[60px] xl:text-[130px] xl:leading-[140px] mt-2 w-[90%] sm:w-2/3 mx-auto font-medium">
+                    Drive the joy to your
+                    life</p>
             </div>
-            <div class="text-container mt-8 mx-auto flex justify-center">
-                <div class="vdo w-[320px] h-[60px] rounded-4xl bg-white mx-2">
+            <div class="text-container mt-8 md:mt-16 mx-auto flex flex-col xl:flex-row justify-center items-center">
+                <div class="vdo w-[320px] h-[60px] xl:h-[70px] rounded-4xl bg-white mx-2 my-4 xl:my-0">
                     <a class="watch h-full flex justify-center" href="" data-lity>
                         <div class="vdo-btn flex justify-center items-center">
-                            <p class="vdo-text mr-4 text-[30px] font-normal">Watch case VDO</p>
-                            <img class="vdo-btn-arrow" src="./assets/images/icons/arrow.png" alt="arrow" />
+                            <p class="vdo-text mr-4 text-[20px] xl:text-[30px] font-normal font-[MazdaTypeTH]">Watch
+                                case VDO</p>
+                            <img class="vdo-btn-arrow" src="./assets/images/icons/arrow-banner.png" alt="arrow" />
                         </div>
                     </a>
                 </div>
 
-                <div class="vdo w-[320px] h-[60px] rounded-4xl bg-none border-1 border-white mx-2">
+                <div class="vdo w-[320px] h-[60px] xl:h-[70px] rounded-4xl bg-none border-1 border-white mx-2">
                     <a class="watch h-full flex justify-center" target="_blank" href="">
                         <div class="vdo-btn flex justify-center items-center">
-                            <p class="vdo-text mr-4 text-white text-[30px] font-normal">Visit site</p>
+                            <p
+                                class="vdo-text mr-4 text-white text-[20px] xl:text-[30px] font-normal font-[MazdaTypeTH]">
+                                Visit site
+                            </p>
                             <img class="vdo-btn-arrow" src="./assets/images/icons/goto.png" alt="goto" />
                         </div>
                     </a>
@@ -46,25 +55,41 @@
         <div class="w-full mx-auto mt-8 overflow-hidden">
             <div class="swiper overflow-visible mt-8" id="swiper1">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide cursor-pointer">
-                        <img class="mx-auto w-full" src="./assets/images/banner/items-1.png" alt="">
+                    <div class="swiper-slide cursor-pointer max-w-[1000px]">
+                        <!-- <img class="mx-auto w-full max-w-[1000px]" src="./assets/images/banner/items-1.png" alt=""> -->
+                        <picture>
+                            <source srcset="./assets/images/banner/items-m-1.png" media="(max-width:768px)" />
+                            <img class="mx-auto w-full max-w-[1000px]" src="./assets/images/banner/items-1.png"
+                                alt="" />
+                        </picture>
                     </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <img class="mx-auto w-full" src="./assets/images/banner/items-2.png" alt="">
+                    <div class="swiper-slide cursor-pointer max-w-[1000px]">
+                        <!-- <img class="mx-auto w-full max-w-[1000px]" src="./assets/images/banner/items-2.png" alt=""> -->
+                        <picture>
+                            <source srcset="./assets/images/banner/items-m-2.png" media="(max-width:768px)" />
+                            <img class="mx-auto w-full max-w-[1000px]" src="./assets/images/banner/items-2.png"
+                                alt="" />
+                        </picture>
                     </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <img class="mx-auto w-full" src="./assets/images/banner/items-3.png" alt="">
+                    <div class="swiper-slide cursor-pointer max-w-[1000px]">
+                        <!-- <img class="mx-auto w-full max-w-[1000px]" src="./assets/images/banner/items-3.png" alt=""> -->
+                        <picture>
+                            <source srcset="./assets/images/banner/items-m-3.png" media="(max-width:768px)" />
+                            <img class="mx-auto w-full max-w-[1000px]" src="./assets/images/banner/items-3.png"
+                                alt="" />
+                        </picture>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section
-        class="banner min-h-[100vh] w-full relative py-8 bg-[url('./assets/images/background/backgound-bg.png')] bg-cover bg-center flex flex-col items-center">
-        <div class="w-4/5 h-full mx-auto text-center ">
+        class="background font-[MazdaTypeTH] min-h-[100vh] w-full relative py-8 bg-[url('./assets/images/background/backgound-bg.png')] bg-cover bg-center flex flex-col items-center">
+        <div class="w-11/12 xl:w-5/6 h-full mx-auto text-center ">
             <div class="text-container mt-8">
-                <h1 class="text-white text-[36px] font-normal">Background</h1>
-                <p class="text-white text-[60px] mt-2 w-full mx-auto font-medium">
+                <p class="text-white text-[24px] xl:text-[36px] font-normal">Background</p>
+                <p
+                    class="text-white text-[36px] leading-[40px] xl:text-[60px] xl:leading-[70px] mt-2 w-full mx-auto font-medium">
                     Mazda is dedicated to enriching the
                     customer experience
                     at every touchpoint. Our goal is lifelong
@@ -72,31 +97,84 @@
             </div>
         </div>
         <div class="w-full mx-auto mt-8 overflow-hidden">
-            <div class="swiper overflow-visible mt-8 w-4/5" id="swiper2">
+            <div class="swiper overflow-visible mt-8 w-5/6" id="swiper2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide cursor-pointer">
                         <div class="context-wrapper relative">
-                            <img class="mx-auto w-full max-w-[540px]" src="./assets/images/background/img-background-1.png" alt="">
-                            <div class="context-text absolute bottom-[5%] left-[5%] flex items-center">
-                                <p class="text-white text-[36px] font-normal mr-4 -mt-2">asdasd</p>
-                                <img class="vdo-btn-arrow" src="./assets/images/icons/arrow.png" alt="arrow" />
+                            <img class="mx-auto w-full max-w-[540px]"
+                                src="./assets/images/background/img-background-1.png" alt="">
+                            <div class="context-text absolute bottom-[5%] left-[5%] flex flex-col items-start">
+                                <div class="flex items-center">
+                                    <p class="text-white text-[36px] font-normal mr-4 mb-4">Radically human</p>
+                                    <div
+                                        class="w-[35px] h-[35px] -mt-2 flex justify-center items-center border-2 border-white rounded-full">
+                                        <img class="arrows transition-all duration-100 ease-in-out"
+                                            src="./assets/images/icons/arrow.png" alt="arrow" />
+                                    </div>
+                                </div>
+                                <p
+                                    class="hide-text h-2 overflow-hidden text-white text-[18px] xl:text-[22px] font-normal mr-4 -mt-2 transition-all duration-300 ease-in-out group-hover:max-h-[500px]">
+                                    We place the human being at the
+                                    center of everything we do: mind,
+                                    body and spirit. We seek to stimulate the mind with human-centric design, care for
+                                    the body through safety and comfort, and feed the spirit with the excitement that
+                                    only a Mazda can offer.</p>
                             </div>
-                            <div class="context absolute h-0 w-full bottom-0 left-0 right-0 bg-[url('./assets/images/background/transparent-img.png')] bg-cover bg-center">
+                            <div
+                                class="context absolute h-0 w-full bottom-0 left-0 right-0 bg-[url('./assets/images/background/transparent-img.png')] bg-cover bg-center">
                             </div>
                         </div>
-                        
+                    </div>
+
+                    <div class="swiper-slide cursor-pointer">
+                        <div class="context-wrapper relative">
+                            <img class="mx-auto w-full max-w-[540px]"
+                                src="./assets/images/background/img-background-2.png" alt="">
+                            <div class="context-text absolute bottom-[5%] left-[5%] flex flex-col items-start">
+                                <div class="flex items-center">
+                                    <p class="text-white text-[36px] font-normal mr-4 mb-4">Challenger spirit</p>
+                                    <div
+                                        class="w-[35px] h-[35px] -mt-2 flex justify-center items-center border-2 border-white rounded-full">
+                                        <img class="arrows transition-all duration-100 ease-in-out"
+                                            src="./assets/images/icons/arrow.png" alt="arrow" />
+                                    </div>
+                                </div>
+                                <p
+                                    class="hide-text h-2 overflow-hidden text-white text-[18px] xl:text-[22px] font-normal mr-4 -mt-2 transition-all duration-300 ease-in-out group-hover:max-h-[500px]">
+                                    Coming from Hiroshima, we take pride
+                                    in our heritage, using it as inspiration to tackle challenges limitlessly. Every
+                                    obstacle becomes an opportunity for innovation, fueling our determination and bold
+                                    approach to future challenges.</p>
+                            </div>
+                            <div
+                                class="context absolute h-0 w-full bottom-0 left-0 right-0 bg-[url('./assets/images/background/transparent-img.png')] bg-cover bg-center">
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-slide cursor-pointer">
                         <div class="context-wrapper relative">
-                            <img class="mx-auto w-full max-w-[540px]" src="./assets/images/background/img-background-2.png" alt="">
-                            <div class="context absolute h-0 w-full bottom-0 left-0 right-0 bg-[url('./assets/images/background/transparent-img.png')] bg-cover bg-center">
+                            <img class="mx-auto w-full max-w-[540px]"
+                                src="./assets/images/background/img-background-3.png" alt="">
+                            <div class="context-text absolute bottom-[5%] left-[5%] flex flex-col items-start">
+                                <div class="flex items-center">
+                                    <p class="text-white text-[36px] font-normal mr-4 mb-4">Omotenashi</p>
+                                    <div
+                                        class="w-[35px] h-[35px] -mt-2 flex justify-center items-center border-2 border-white rounded-full">
+                                        <img class="arrows transition-all duration-100 ease-in-out"
+                                            src="./assets/images/icons/arrow.png" alt="arrow" />
+                                    </div>
+                                </div>
+                                <p
+                                    class="hide-text h-2 overflow-hidden text-white text-[18px] xl:text-[22px] font-normal mr-4 -mt-2 transition-all duration-300 ease-in-out group-hover:max-h-[500px]">
+                                    We value each customer uniquely,
+                                    aiming to create personalised
+                                    experiences and exceeding customer expectations at every step of their Mazda
+                                    journey. Hospitality, for us, goes beyond gestures—it’s the essence of how we treat
+                                    those
+                                    we serve.</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide cursor-pointer">
-                        <div class="context-wrapper relative">
-                            <img class="mx-auto w-full max-w-[540px]" src="./assets/images/background/img-background-3.png" alt="">
-                            <div class="context absolute h-0 w-full bottom-0 left-0 right-0 bg-[url('./assets/images/background/transparent-img.png')] bg-cover bg-center">
+                            <div
+                                class="context absolute h-0 w-full bottom-0 left-0 right-0 bg-[url('./assets/images/background/transparent-img.png')] bg-cover bg-center">
                             </div>
                         </div>
                     </div>
@@ -104,20 +182,267 @@
             </div>
         </div>
     </section>
+    <section class="challenge font-[MazdaTypeTH] min-h-[80vh] w-full relative bg-black bg-top">
+        <!-- <div class="w-full h-[80vh] bg-black"> -->
+        <div
+            class="w-11/12 xl:w-5/6 mx-auto pt-36 flex flex-col items-center lg:items-start justify-center lg:flex-row">
+            <div class="w-full lg:w-[25%] text-center lg:text-left">
+                <p class="text-white text-[24px] xl:text-[36px] mt-4 font-normal">Challenge</p>
+            </div>
+            <div class="w-full lg:w-[75%] text-center lg:text-left ">
+                <p
+                    class="text-white text-[36px] leading-[40px] xl:text-[60px] xl:leading-[70px] w-full mx-auto font-medium">
+                    How can we effectively
+                    <span class="text-[#d8b38e]">communicate these 3
+                        values</span> through the
+                    Mazda website and
+                    build the long-lasting
+                    relationship?
+                </p>
+            </div>
+        </div>
+        <div class="w-11/12 xl:w-5/6 mx-auto pt-12 h-auto relative z-10">
+            <picture>
+                <source srcset="./assets/images/challenge/challenge-m.png" media="(max-width:768px)" />
+                <img class="mx-auto w-full max-w-[1500px]" src="./assets/images/challenge/challenge.png" alt="" />
+            </picture>
+        </div>
+        <div class="absolute bottom-0 w-full h-[35vh] max-h-[250px] bg-white z-0"> </div>
+        <!-- </div> -->
+    </section>
+
+    <section class="challenge font-[MazdaTypeTH] min-h-[100vh] w-full relative bg-top bg-white">
+        <div class="h-[100vh] relative flex flex-col justify-center items-center w-full">
+            <div class="w-11/12 xl:w-5/6 text-center">
+                <p class="text-black text-[24px] xl:text-[36px] mt-4 font-normal">Website Concept</p>
+            </div>
+            <div class="w-11/12 xl:w-5/6 text-center">
+                <p class="text-black text-[50px] xl:text-[130px] uppercase font-medium">
+                    joy drive lives
+                </p>
+
+            </div>
+            <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left ">
+                <p
+                    class="text-black text-[36px] leading-[40px] xl:text-[60px] xl:leading-[70px] w-full mx-auto font-bold text-center">
+                    Elevate the website experience to increase sales
+                    conversions and support the entire customer lifecycle,
+                    from acquisition to retention.
+                </p>
+            </div>
+        </div>
+        <div class=" w-full ">
+            <!-- <div class="h-[100vh] w-full"></div> -->
+            <div
+                class="pb-12 relative flex flex-col  items-center w-full bg-[url('./assets/images/main/main-bg.png')] bg-cover bg-center">
+                <div class="w-11/12 xl:w-5/6 text-center">
+                    <p class="text-black text-[24px] xl:text-[36px] mt-4 font-normal"></p>
+                </div>
+                <div class="w-11/12 xl:w-5/6 text-center">
+                    <p class="text-black text-[50px] xl:text-[130px] uppercase font-medium">
+                        joy drive lives
+                    </p>
+
+                </div>
+                <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-2 xl:-mt-2">
+                    <p
+                        class="text-black text-[24px] leading-[34px] xl:text-[60px] xl:leading-[70px] w-full mx-auto font-bold text-center">
+                        Enjoyable User Experience
+                    </p>
+                </div>
+                <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-4">
+                    <p
+                        class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] w-full mx-auto font-bold text-center">
+                        Create a seamless customer journey, Designing navigation based on customer needs.
+                    </p>
+                </div>
+                <div class="swiper w-11/12 xl:w-11/12 mt-8" id="swiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide main-swipe flex flex-col items-center">
+                            <img class="w-auto" src="./assets/images/main/item1.png" alt="">
+                            <p
+                                class="text-black text-[24px] leading-[34px] xl:text-[36px] xl:leading-[46px] text-center font-bold mt-2">
+                                Uplift Experiences</p>
+                            <p
+                                class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] text-center font-normal mt-2">
+                                Introducing features like
+                                360° interior and exterior
+                                car images.</p>
+                        </div>
+                        <div class="swiper-slide main-swipe flex flex-col items-center">
+                            <img class="w-auto" src="./assets/images/main/item2.png" alt="">
+                            <p
+                                class="text-black text-[24px] leading-[34px] xl:text-[36px] xl:leading-[46px] text-center font-bold mt-2">
+                                Simplified Menu <br>Navigation</p>
+                            <p
+                                class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] text-center font-normal mt-2">
+                                Quickly access our menu with frequently used shortcuts for effortless browsing.</p>
+                        </div>
+                        <div class="swiper-slide main-swipe flex flex-col items-center">
+                            <img class="w-auto" src="./assets/images/main/item3.png" alt="">
+                            <p
+                                class="text-black text-[24px] leading-[34px] xl:text-[36px] xl:leading-[46px] text-center font-bold mt-2">
+                                Always-Available CTA</p>
+                            <p
+                                class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] text-center font-normal mt-2">
+                                Key actions are always within reach, ensuring a seamless and convenient experience.</p>
+                        </div>
+                        <div class="swiper-slide main-swipe flex flex-col items-center">
+                            <img class="w-auto" src="./assets/images/main/item4.png" alt="">
+                            <p
+                                class="text-black text-[24px] leading-[34px] xl:text-[36px] xl:leading-[46px] text-center font-bold mt-2">
+                                Resume The Last <br>Visited Model </p>
+                            <p
+                                class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] text-center font-normal mt-2">
+                                Returning visitors can easily resume browsing from their recently viewed products.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="min-h-[100vh] relative flex flex-col  w-full">
+            <div
+                class="pb-12 relative flex flex-col  items-center w-full  h-full bg-[url('./assets/images/main/main-bg.png')] bg-cover bg-bottom">
+                <div class="w-11/12 xl:w-5/6 text-center">
+                    <p class="text-black text-[24px] xl:text-[36px] mt-4 font-normal"></p>
+                </div>
+                <div class="w-11/12 xl:w-5/6 text-center">
+                    <p class="text-black text-[50px] xl:text-[130px] uppercase font-medium">
+                        joy drive lives
+                    </p>
+
+                </div>
+                <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-2 xl:-mt-2">
+                    <p
+                        class="text-black text-[24px] leading-[34px] xl:text-[60px] xl:leading-[70px] w-full mx-auto font-bold text-center">
+                        Drive To Sales
+                    </p>
+                </div>
+                <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-4">
+                    <p
+                        class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] w-full mx-auto font-bold text-center">
+                        Customized quotes for customers needs.
+                    </p>
+                </div>
+                <div class="w-11/12 xl:w-5/6 mt-4">
+                    <picture>
+                        <source srcset="./assets/images/main/main2-m-img.png" media="(max-width:768px)" />
+                        <img class="mx-auto w-full max-w-[1500px]" src="./assets/images/main/main2-img.png" alt="" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+
+        <div class=" relative flex flex-col  w-full">
+            <div
+                class="pb-12 relative flex flex-col  items-center w-full  h-full bg-[url('./assets/images/main/main-bg.png')] bg-cover bg-bottom">
+                <div class="w-11/12 xl:w-5/6 text-center">
+                    <p class="text-black text-[24px] xl:text-[36px] mt-4 font-normal"></p>
+                </div>
+                <div class="w-11/12 xl:w-5/6 text-center">
+                    <p class="text-black text-[50px] xl:text-[130px] uppercase font-medium">
+                        joy drive lives
+                    </p>
+
+                </div>
+                <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-2 xl:-mt-2">
+                    <p
+                        class="text-black text-[24px] leading-[34px] xl:text-[60px] xl:leading-[70px] w-full mx-auto font-bold text-center">
+                        Connect with “Life with Mazda”
+                    </p>
+                </div>
+                <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-4">
+                    <p
+                        class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] w-full mx-auto font-bold text-center">
+                        The "Life with Mazda" blog helps drive more traffic to our website through improved SEO.
+                    </p>
+                </div>
+
+                <div class="swiper w-11/12 xl:w-11/12 mt-8" id="swiper4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide main-swipe flex flex-col items-center">
+                            <img class="w-auto" src="./assets/images/main/lives-item1.png" alt="">
+                        </div>
+                        <div class="swiper-slide main-swipe flex flex-col items-center">
+                            <img class="w-auto" src="./assets/images/main/lives-item2.png" alt="">
+                        </div>
+                        <div class="swiper-slide main-swipe flex flex-col items-center">
+                            <img class="w-auto" src="./assets/images/main/lives-item3.png" alt="">
+                        </div>
+                        <div class="swiper-slide main-swipe flex flex-col items-center">
+                            <img class="w-auto" src="./assets/images/main/lives-item4.png" alt="">
+                        </div>
+                        <div class="swiper-slide main-swipe flex flex-col items-center">
+                            <img class="w-auto" src="./assets/images/main/lives-item5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ex bg-[#d4cec3] w-full pt-40 pb-16 font-[MazdaTypeTH]">
+        <img class="w-full my-16" src="./assets/images/experience/experience.png" alt="">
+        <div class="flex flex-col items-center justify-center">
+            <div class="w-11/12 xl:w-5/6 text-center">
+                <p class="text-black text-[24px] xl:text-[36px] mt-4 font-normal">View our project</p>
+            </div>
+            <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-4">
+                <p
+                    class="text-black text-[24px] leading-[34px] xl:text-[60px] xl:leading-[70px] w-full mx-auto font-bold text-center">
+                    Connect with “Life with Mazda”
+                </p>
+            </div>
+            <div class="flex my-12 flex-col xl:flex-row xl:mx-4">
+                <div class="vdo w-[320px] h-[60px] xl:h-[70px] rounded-4xl bg-white mx-2 my-4 xl:my-0">
+                    <a class="watch h-full flex justify-center" href="" data-lity>
+                        <div class="vdo-btn flex justify-center items-center">
+                            <p class="vdo-text mr-4 text-[20px] xl:text-[30px] font-normal font-[MazdaTypeTH]">Watch
+                                case VDO</p>
+                            <img class="vdo-btn-arrow" src="./assets/images/icons/arrow-banner.png" alt="arrow" />
+                        </div>
+                    </a>
+                </div>
+
+                <div class="vdo w-[320px] h-[60px] xl:h-[70px] rounded-4xl bg-none border-1 border-white mx-2">
+                    <a class="watch h-full flex justify-center" target="_blank" href="">
+                        <div class="vdo-btn flex justify-center items-center">
+                            <p
+                                class="vdo-text mr-4 text-white text-[20px] xl:text-[30px] font-normal font-[MazdaTypeTH]">
+                                Visit site
+                            </p>
+                            <img class="vdo-btn-arrow" src="./assets/images/icons/goto.png" alt="goto" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 </body>
 <script src="./vendor/jquery.js"></script>
 <script src="./vendor/swiper-bundle.min.js"></script>
 <script src="./vendor/lity.min.js"></script>
 <script>
     var swiper = new Swiper('#swiper1', {
-        slidesPerView: 1.5,
+        slidesPerView: 2,
         speed: 700,
-        spaceBetween: 30,
+
         loop: true,
         centeredSlides: true,
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
+        },
+        breakpoints: {
+            0: {
+                spaceBetween: 10,
+            },
+            1024: {
+                spaceBetween: 30,
+            }
         },
         pagination: {
             el: '.swiper-pagination',
@@ -154,6 +479,85 @@
             clickable: true,
         },
     });
+
+    var swiper = new Swiper('#swiper3', {
+        speed: 700,
+        loop: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 1.5,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+                allowTouchMove: false,
+            },
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    var swiper = new Swiper('#swiper4', {
+        speed: 700,
+        loop: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+            },
+            640: {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2.5,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+                allowTouchMove: false,
+            },
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+    let cards = document.querySelectorAll('.context-wrapper');
+
+    cards.forEach((item) => {
+        item.addEventListener('click', () => {
+            const textElement = item.querySelector('.hide-text');
+            const textContextElement = item.querySelector('.context-text');
+            const arrowElement = item.querySelector('.arrows');
+            const context = item.querySelector('.context');
+
+            const isCollapsed = textElement.classList.contains('h-2');
+
+            textElement.classList.toggle('h-auto', isCollapsed);
+            textElement.classList.toggle('h-2', !isCollapsed);
+            textContextElement.classList.toggle('z-20', isCollapsed);
+
+            context.classList.toggle('h-full', isCollapsed);
+            context.classList.toggle('h-0', !isCollapsed);
+
+            arrowElement.classList.toggle('rotate-180', isCollapsed);
+        });
+    });
+
 
 </script>
 
