@@ -24,3 +24,68 @@
 #swiper4 .swiper-slide:nth-child(2n-1) {
     @apply xl:mt-20;
 }
+
+.swiper-pagination3 {
+    margin-top: 2rem;
+    width: 100% !important;
+}
+
+.watch:hover .vdo-btn p {
+    @apply text-[22px] xl:text-[32px] transition-all duration-300 ease-in-out;
+}
+
+.swiper-pagination3 .swiper-pagination-bullet {
+    width: 25% !important;
+    height: 8px !important;
+    background: rgba(255, 255, 255, 0.7) !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.swiper-pagination3 .swiper-pagination-bullet-active {
+    width: 25% !important;
+    height: 8px !important;
+    background: #fff !important;
+    border-radius: 4px !important;
+    margin: 0 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.swiper-pagination4 {
+    margin-top: 4rem;
+    width: 100% !important;
+}
+
+.swiper-pagination4 .swiper-pagination-bullet {
+    width: 20% !important;
+    height: 8px !important;
+    background: rgba(255, 255, 255, 0.7) !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.swiper-pagination4 .swiper-pagination-bullet-active {
+    width: 20% !important;
+    height: 8px !important;
+    background: #fff !important;
+    border-radius: 4px !important;
+    margin: 0 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    .swiper {
+        overflow: visible !important;
+    }
+
+    section {
+        margin-top: -1px;
+    }
+
+    .mainsec3 > div {
+        margin-top: -1px;
+    }
+
+}

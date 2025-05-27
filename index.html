@@ -14,15 +14,15 @@
 
 <body>
     <section
-        class="banner font-[MazdaTypeTH] min-h-[100vh] w-full relative py-8 bg-[url('./assets/images/banner/banner-bg.png')] bg-cover bg-center flex flex-col items-center justify-center">
+        class="banner overflow-hidden font-[MazdaTypeTH] min-h-[100vh] w-full relative py-8 bg-[url('./assets/images/banner/banner-bg.png')] bg-cover bg-center flex flex-col items-center justify-center">
         <div class="w-5/6 h-full mx-auto text-center ">
             <div class="logo flex ">
                 <img src="./assets/images/banner/logo_mazda.png" alt="mazda Logo"
-                    class="w-auto h-[31px] md:h-[40px] pr-8 border-r-1 border-white">
+                    class="w-auto h-[31px] md:h-[40px] pr-4 xl:pr-8 border-r-1 border-white">
                 <img src="./assets/images/banner/logo_mirum.png" alt="mirum Logo"
-                    class="w-auto h-[31px] md:h-[40px] px-8">
+                    class="w-auto h-[31px] md:h-[40px] px-4 xl:px-8">
             </div>
-            <div class="text-container mt-8">
+            <div class="text-container mt-20 xl:mt-8">
                 <h1 class="text-white text-[24px] xl:text-[36px] font-normal" data-aos="fade-up"
                     data-aos-duration="500">Mazda Thailand website</h1>
                 <p data-aos="fade-up" data-aos-duration="650"
@@ -30,11 +30,11 @@
                     Drive the joy to your
                     life</p>
             </div>
-            <div class="text-container mt-8 md:mt-16 mx-auto flex flex-col xl:flex-row justify-center items-center">
-                <div class="vdo w-[320px] h-[60px] xl:h-[70px] rounded-4xl bg-white mx-2 my-4 xl:my-0"
+            <div class="text-container mt-4 md:mt-16 mx-auto flex flex-col xl:flex-row justify-center items-center">
+                <div class="vdo w-full xl:w-[320px] h-[60px] xl:h-[70px] rounded-4xl bg-white mx-2 my-4 xl:my-0"
                     data-aos="fade-up" data-aos-duration="750">
                     <a class="watch h-full flex justify-center" href="" data-lity>
-                        <div class="vdo-btn flex justify-center items-center">
+                        <div class="vdo-btn flex justify-center items-center transition-all duration-300 ease-in-out">
                             <p class="vdo-text mr-4 text-[20px] xl:text-[30px] font-normal font-[MazdaTypeTH]">Watch
                                 case VDO</p>
                             <img class="vdo-btn-arrow" src="./assets/images/icons/arrow-banner.png" alt="arrow" />
@@ -42,10 +42,10 @@
                     </a>
                 </div>
 
-                <div class="vdo w-[320px] h-[60px] xl:h-[70px] rounded-4xl bg-none border-1 border-white mx-2"
+                <div class="vdo w-full xl:w-[320px] h-[60px] xl:h-[70px] rounded-4xl bg-none border-1 border-white mx-2"
                     data-aos="fade-up" data-aos-duration="850">
                     <a class="watch h-full flex justify-center" target="_blank" href="">
-                        <div class="vdo-btn flex justify-center items-center">
+                        <div class="vdo-btn flex justify-center items-center  transition-all duration-300 ease-in-out">
                             <p
                                 class="vdo-text mr-4 text-white text-[20px] xl:text-[30px] font-normal font-[MazdaTypeTH]">
                                 Visit site
@@ -56,7 +56,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full mx-auto mt-8 overflow-auto">
+        <div class="w-full mx-auto mt-0 xl:mt-8">
             <div class="swiper overflow-visible mt-8" id="swiper1" data-aos="fade-up" data-aos-duration="950">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide slide1 cursor-pointer max-w-[1000px] absolute z-30">
@@ -88,7 +88,7 @@
         </div>
     </section>
     <section
-        class="background font-[MazdaTypeTH] min-h-[100vh] w-full relative py-8 bg-[url('./assets/images/background/backgound-bg.png')] bg-cover bg-center flex flex-col items-center">
+        class="background overflow-hidden font-[MazdaTypeTH] xl:min-h-[100vh] w-full relative py-8 bg-[url('./assets/images/background/backgound-bg.png')] bg-cover bg-center flex flex-col items-center">
         <div class="w-11/12 xl:w-5/6 h-full mx-auto text-center">
             <div class="text-container mt-8">
                 <p class="text-white text-[24px] xl:text-[36px] font-normal" data-aos="fade-up" data-aos-duration="500">
@@ -187,10 +187,14 @@
             </div>
         </div>
     </section>
-    <section class="challenge font-[MazdaTypeTH] min-h-[80vh] w-full relative bg-black bg-top">
+    <section class="challenge overflow-hidden font-[MazdaTypeTH] min-h-[80vh] w-full relative bg-black bg-top">
         <!-- <div class="w-full h-[80vh] bg-black"> -->
+            <div class="absolute top-[10%] left-1/2 transform -translate-x-1/2 w-[220%] xl:w-full text-center z-10">
+                <img class=" xl:w-auto mx-auto pl-30 xl:pl-0" src="./assets/images/challenge/bg-group.png"
+                    alt="challenge logo">
+            </div>
         <div
-            class="w-11/12 xl:w-5/6 mx-auto pt-36 flex flex-col items-center lg:items-start justify-center lg:flex-row">
+            class="w-11/12 xl:w-5/6 mx-auto pt-8 xl:pt-36 flex flex-col items-center lg:items-start justify-center lg:flex-row">
             <div class="w-full lg:w-[25%] text-center lg:text-left" data-aos="fade-up" data-aos-duration="500">
                 <p class="text-white text-[24px] xl:text-[36px] mt-4 font-normal">Challenge</p>
             </div>
@@ -216,17 +220,19 @@
         <!-- </div> -->
     </section>
 
-    <section class="mainsec font-[MazdaTypeTH] min-h-[100vh] w-full relative bg-top bg-white">
-        <div class="h-[100vh] relative flex flex-col justify-center items-center w-full">
+    <section class="font-[MazdaTypeTH] overflow-hidden min-h-[100vh] w-full relative bg-top bg-white">
+        <div class="mainsec pt-16 xl:pt-0 h-[60svh] xl:h-[100svh] relative flex flex-col justify-center items-center w-full">
             <div class="w-11/12 xl:w-5/6 text-center" data-aos="fade-up" data-aos-duration="500">
                 <p class="text-black text-[24px] xl:text-[36px] mt-4 font-normal">Website Concept</p>
             </div>
-            <div class="w-11/12 xl:w-5/6 text-center joy-text relative z-50 ">
-                <img class="comma1 absolute -top-[70%] " src="./assets/images/main/comma1.png" alt="" />
+            <div class="w-11/12 xl:w-5/6 text-center joy-text relative z-50 top-0">
+                <img class="comma1 w-[25%] xl:w-auto absolute -top-[70%] " src="./assets/images/main/comma1.png"
+                    alt="" />
                 <p class="text-black text-[50px] xl:text-[130px] uppercase font-medium">
                     joy drive lives
                 </p>
-                <img class="comma2 absolute -bottom-[70%]" src="./assets/images/main/comma2.png" alt="" />
+                <img class="comma2 w-[25%] xl:w-auto absolute -bottom-[70%]" src="./assets/images/main/comma2.png"
+                    alt="" />
             </div>
 
             <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left fade-out-text">
@@ -238,175 +244,188 @@
                 </p>
             </div>
         </div>
-        <div class=" w-full ">
-            <!-- <div class="h-[25vh] w-full"></div> -->
-            <div
-                class="mainsec2 z-10 pb-12 relative flex flex-col items-center w-full bg-white bg-[url('./assets/images/main/main-bg.png')] bg-cover bg-center">
-                <div class="w-11/12 xl:w-5/6 text-center">
-                    <p class="text-black text-[24px] xl:text-[36px] mt-4 font-normal"></p>
+
+        <div class="mainsec2 mt-16 pb-8  xl:h-[100vh] relative flex flex-col  items-center w-full bg-[url('./assets/images/main/main-bg.png')] bg-cover bg-bottom">
+            <div class="main2-wrapper w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-2 xl:-mt-6">
+                <div
+                    class="w-11/12 xl:w-5/6 text-center ">
+                    <p class="text-black text-[24px] xl:text-[36px] font-normal"></p>
                 </div>
-                <div class="w-11/12 xl:w-5/6 text-center joy-text2 relative z-50">
-                    <p class="text-black text-[50px] xl:text-[130px] uppercase font-medium">
-                        joy drive lives
+                <div class="w-full xl:w-5/6 text-center joy-text2 relative z-50 mx-auto">
+                    <p
+                        class="text-white text-[50px] xl:text-[130px] uppercase font-medium drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)]">
+                        <span class="text-black">joy</span> drive lives
                     </p>
                 </div>
-                <div class="main2  w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-2 xl:-mt-6" data-aos="fade-up"
-                    data-aos-duration="500">
+                <div class="main2" data-aos="fade-up" data-aos-duration="500">
                     <p
                         class="text-black text-[24px] leading-[34px] xl:text-[60px] xl:leading-[70px] w-full mx-auto font-bold text-center">
                         Enjoyable User Experience
                     </p>
                 </div>
-                <div class="main2 w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-2" data-aos="fade-up"
+                <div class="main2 w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-2 mx-auto" data-aos="fade-up"
                     data-aos-duration="700">
                     <p
                         class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] w-full mx-auto font-bold text-center">
                         Create a seamless customer journey, Designing navigation based on customer needs.
                     </p>
                 </div>
-                <div class="main2 swiper w-11/12 xl:w-11/12 mt-8" id="swiper3">
+                <div class="main2 swiper  w-11/12 xl:w-10/12 mt-6" id="swiper3">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
                             data-aos-duration="700">
-                            <img class="w-auto" src="./assets/images/main/item1.png" alt="">
+                            <img class="xl:w-[75%] xl:max-w-[200px] mx-auto" src="./assets/images/main/item1.png"
+                                alt="">
                             <p
-                                class="text-black text-[24px] leading-[34px] xl:text-[36px] xl:leading-[46px] text-center font-bold mt-2">
+                                class="text-black text-[24px] leading-[34px] xl:text-[30px] xl:leading-[40px] text-center font-bold mt-0">
                                 Uplift Experiences</p>
                             <p
-                                class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] text-center font-normal mt-2">
+                                class="text-black text-[18px] leading-[28px] xl:text-[22px] xl:leading-[32px] text-center font-normal mt-2">
                                 Introducing features like
                                 360° interior and exterior
                                 car images.</p>
                         </div>
                         <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
                             data-aos-duration="1000">
-                            <img class="w-auto" src="./assets/images/main/item2.png" alt="">
+                            <img class="xl:w-[75%] xl:max-w-[200px] mx-auto" src="./assets/images/main/item2.png"
+                                alt="">
                             <p
-                                class="text-black text-[24px] leading-[34px] xl:text-[36px] xl:leading-[46px] text-center font-bold mt-2">
+                                class="text-black text-[24px] leading-[34px] xl:text-[30px] xl:leading-[40px] text-center font-bold mt-0">
                                 Simplified Menu <br>Navigation</p>
                             <p
-                                class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] text-center font-normal mt-2">
+                                class="text-black text-[18px] leading-[28px] xl:text-[22px] xl:leading-[32px] text-center font-normal mt-2">
                                 Quickly access our menu with frequently used shortcuts for effortless browsing.</p>
                         </div>
                         <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
                             data-aos-duration="1300">
-                            <img class="w-auto" src="./assets/images/main/item3.png" alt="">
+                            <img class="xl:w-[75%] xl:max-w-[200px] mx-auto" src="./assets/images/main/item3.png"
+                                alt="">
                             <p
-                                class="text-black text-[24px] leading-[34px] xl:text-[36px] xl:leading-[46px] text-center font-bold mt-2">
+                                class="text-black text-[24px] leading-[34px] xl:text-[30px] xl:leading-[40px] text-center font-bold mt-0">
                                 Always-Available CTA</p>
                             <p
-                                class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] text-center font-normal mt-2">
+                                class="text-black text-[18px] leading-[28px] xl:text-[22px] xl:leading-[32px] text-center font-normal mt-2">
                                 Key actions are always within reach, ensuring a seamless and convenient experience.
                             </p>
                         </div>
                         <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
                             data-aos-duration="1600">
-                            <img class="w-auto" src="./assets/images/main/item4.png" alt="">
+                            <img class="xl:w-[75%] xl:max-w-[200px] mx-auto" src="./assets/images/main/item4.png"
+                                alt="">
                             <p
-                                class="text-black text-[24px] leading-[34px] xl:text-[36px] xl:leading-[46px] text-center font-bold mt-2">
+                                class="text-black text-[24px] leading-[34px] xl:text-[30px] xl:leading-[40px] text-center font-bold mt-0">
                                 Resume The Last <br>Visited Model </p>
                             <p
-                                class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] text-center font-normal mt-2">
+                                class="text-black text-[18px] leading-[28px] xl:text-[22px] xl:leading-[32px] text-center font-normal mt-2">
                                 Returning visitors can easily resume browsing from their recently viewed products.
                             </p>
                         </div>
                     </div>
+                    <div class="swiper-pagination3 block xl:hidden mt-6"></div>
                 </div>
             </div>
         </div>
 
-        <div class="min-h-[100vh] relative flex flex-col  w-full mainsec3  z-20 bg-white">
+        <div
+            class="mainsec3 mt-0 pb-0 xl:mt-0  xl:h-[100vh] relative flex flex-col w-full bg-white bg-[url('./assets/images/main/main-bg.png')] bg-cover bg-bottom">
             <div
-                class="  pb-12 relative flex flex-col  items-center w-full  h-full bg-[url('./assets/images/main/main-bg.png')] bg-cover bg-bottom">
-                <div class="w-11/12 xl:w-5/6 text-center">
-                    <p class="text-black text-[24px] xl:text-[36px] mt-4 font-normal"></p>
-                </div>
-                <div class="w-11/12 xl:w-5/6 text-center joy-text3 relative z-50">
-                    <p class="text-black text-[50px] xl:text-[130px] uppercase font-medium">
-                        joy drive lives
-                    </p>
-
-                </div>
-                <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-2 xl:-mt-6" data-aos="fade-up"
-                    data-aos-duration="500">
-                    <p
-                        class="text-black text-[24px] leading-[34px] xl:text-[60px] xl:leading-[70px] w-full mx-auto font-bold text-center">
-                        Drive To Sales
-                    </p>
-                </div>
-                <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-2" data-aos="fade-up"
-                    data-aos-duration="1000">
-                    <p
-                        class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] w-full mx-auto font-bold text-center">
-                        Customized quotes for customers needs.
-                    </p>
-                </div>
-                <div class="w-11/12 xl:w-5/6 mt-4" data-aos="fade-up" data-aos-duration="1500">
-                    <picture>
-                        <source srcset="./assets/images/main/main2-m-img.png" media="(max-width:768px)" />
-                        <img class="mx-auto w-full max-w-[1500px]" src="./assets/images/main/main2-img.png" alt="" />
-                    </picture>
-                </div>
-            </div>
-        </div>
-
-        <div class=" relative flex flex-col  w-full mainsec4 z-30 bg-white">
-            <div
-                class="pb-12 relative flex flex-col  items-center w-full  h-full bg-[url('./assets/images/main/main-bg.png')] bg-cover bg-bottom">
-                <div class="w-11/12 xl:w-5/6 text-center">
-                    <p class="text-black text-[24px] xl:text-[36px] mt-4 font-normal"></p>
-                </div>
-                <div class="w-11/12 xl:w-5/6 text-center joy-text4 relative z-50">
-                    <p class="text-black text-[50px] xl:text-[130px] uppercase font-medium">
-                        joy drive lives
-                    </p>
-
-                </div>
-                <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-2 xl:-mt-6" data-aos="fade-up"
-                    data-aos-duration="500">
-                    <p
-                        class="text-black text-[24px] leading-[34px] xl:text-[60px] xl:leading-[70px] w-full mx-auto font-bold text-center">
-                        Connect with “Life with Mazda”
-                    </p>
-                </div>
-                <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-4" data-aos="fade-up"
-                    data-aos-duration="1000">
-                    <p
-                        class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] w-full mx-auto font-bold text-center">
-                        The "Life with Mazda" blog helps drive more traffic to our website through improved SEO.
-                    </p>
-                </div>
-
-                <div class="swiper w-11/12 xl:w-11/12 mt-8" id="swiper4">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
-                            data-aos-duration="1000">
-                            <img class="w-auto" src="./assets/images/main/lives-item1.png" alt="">
-                        </div>
-                        <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
-                            data-aos-duration="1300">
-                            <img class="w-auto" src="./assets/images/main/lives-item2.png" alt="">
-                        </div>
-                        <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
-                            data-aos-duration="1600">
-                            <img class="w-auto" src="./assets/images/main/lives-item3.png" alt="">
-                        </div>
-                        <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
-                            data-aos-duration="1900">
-                            <img class="w-auto" src="./assets/images/main/lives-item4.png" alt="">
-                        </div>
-                        <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
-                            data-aos-duration="2200">
-                            <img class="w-auto" src="./assets/images/main/lives-item5.png" alt="">
-                        </div>
+                class="pb-12 pt-16 relative flex flex-col  items-center w-full  h-full bg-[url('./assets/images/main/main-bg.png')] bg-cover bg-bottom">
+                <div class="main3-wrapper w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-2 xl:-mt-6  mx-auto">
+                    <div class="w-11/12 xl:w-5/6 text-center">
+                        <p class="text-black text-[24px] xl:text-[36px] font-normal"></p>
+                    </div>
+                    <div class="w-full  xl:w-5/6 text-center joy-text3 relative z-50 mx-auto">
+                        <p
+                            class="text-white text-[50px] xl:text-[130px] uppercase font-medium drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)]">
+                            joy <span class="text-black">drive</span> lives
+                        </p>
+                    </div>
+                    <div class="" data-aos="fade-up" data-aos-duration="500">
+                        <p
+                            class="text-black text-[24px] leading-[34px] xl:text-[60px] xl:leading-[70px] w-full mx-auto font-bold text-center">
+                            Drive To Sales
+                        </p>
+                    </div>
+                    <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-2 mx-auto" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <p
+                            class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] w-full mx-auto font-bold text-center">
+                            Customized quotes for customers needs.
+                        </p>
+                    </div>
+                    <div class="w-11/12 xl:w-5/6 mt-4 mx-auto" data-aos="fade-up" data-aos-duration="1500">
+                        <picture>
+                            <source srcset="./assets/images/main/main2-m-img.png" media="(max-width:768px)" />
+                            <img class="mx-auto w-[75%] max-w-[1500px]" src="./assets/images/main/main2-img.png"
+                                alt="" />
+                        </picture>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div
+            class="mainsec4 pt-10 pb-0 xl:mt-0 xl:min-h-[100vh] relative flex flex-col w-full bg-white bg-[url('./assets/images/main/main-bg.png')] bg-cover bg-bottom">
+            <div class="pb-12 relative flex flex-col  items-center w-full  h-full ">
+
+                <div class="main4-wrapper w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-2 xl:-mt-6">
+                    <div class="w-11/12 xl:w-5/6 text-center">
+                        <p class="text-black text-[24px] xl:text-[36px] font-normal"></p>
+                    </div>
+                    <div class="w-full  xl:w-5/6 text-center joy-text4 relative z-50 mx-auto">
+                        <p
+                            class="text-white text-[50px] xl:text-[130px] uppercase font-medium drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,1)]">
+                            joy drive <span class="text-black">lives</span>
+                        </p>
+                    </div>
+                    <div class="" data-aos="fade-up" data-aos-duration="500">
+                        <p
+                            class="text-black text-[24px] leading-[34px] xl:text-[60px] xl:leading-[70px] w-full mx-auto font-bold text-center">
+                            Connect with “Life with Mazda”
+                        </p>
+                    </div>
+                    <div class="w-11/12 xl:w-5/6 lg:w-[75%] text-center lg:text-left mt-4 mx-auto" data-aos="fade-up"
+                        data-aos-duration="1000">
+                        <p
+                            class="text-black text-[20px] leading-[30px] xl:text-[30px] xl:leading-[40px] w-full mx-auto font-bold text-center">
+                            The "Life with Mazda" blog helps drive more traffic to our website through improved SEO.
+                        </p>
+                    </div>
+
+                    <div class="swiper w-11/12 xl:w-10/12 mt-8" id="swiper4">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
+                                data-aos-duration="1000">
+                                <img class="w-auto mx-auto" src="./assets/images/main/lives-item1.png" alt="">
+                            </div>
+                            <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
+                                data-aos-duration="1300">
+                                <img class="w-auto mx-auto" src="./assets/images/main/lives-item2.png" alt="">
+                            </div>
+                            <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
+                                data-aos-duration="1600">
+                                <img class="w-auto mx-auto" src="./assets/images/main/lives-item3.png" alt="">
+                            </div>
+                            <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
+                                data-aos-duration="1900">
+                                <img class="w-auto mx-auto" src="./assets/images/main/lives-item4.png" alt="">
+                            </div>
+                            <div class="swiper-slide main-swipe flex flex-col items-center" data-aos="fade-up"
+                                data-aos-duration="2200">
+                                <img class="w-auto mx-auto" src="./assets/images/main/lives-item5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination4 block xl:hidden w-11/12 mx-auto"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <section class="ex bg-[#d4cec3] w-full pt-36 pb-16 font-[MazdaTypeTH] relative z-50">
-        <img class="w-full my-16" src="./assets/images/experience/experience.png" alt="" data-aos="fade-up"
+    <section class="ex bg-[#d4cec3] overflow-hidden w-full pt-0 xl:pt-16 pb-16 font-[MazdaTypeTH] relative z-50">
+        <img class="w-full py-16" src="./assets/images/experience/experience.png" alt="" data-aos="fade-up"
             data-aos-duration="500">
         <div class="flex flex-col items-center justify-center">
             <div class="w-11/12 xl:w-5/6 text-center" data-aos="fade-up" data-aos-duration="500">
@@ -423,7 +442,7 @@
                 <div class="vdo w-[320px] h-[60px] xl:h-[70px] rounded-4xl bg-white mx-2 my-4 xl:my-0"
                     data-aos="fade-up" data-aos-duration="900">
                     <a class="watch h-full flex justify-center" href="" data-lity>
-                        <div class="vdo-btn flex justify-center items-center">
+                        <div class="vdo-btn flex justify-center items-center  transition-all duration-300 ease-in-out">
                             <p class="vdo-text mr-4 text-[20px] xl:text-[30px] font-normal font-[MazdaTypeTH]">Watch
                                 case VDO</p>
                             <img class="vdo-btn-arrow" src="./assets/images/icons/arrow-banner.png" alt="arrow" />
@@ -434,7 +453,7 @@
                 <div class="vdo w-[320px] h-[60px] xl:h-[70px] rounded-4xl bg-none border-1 border-white mx-2"
                     data-aos="fade-up" data-aos-duration="1100">
                     <a class="watch h-full flex justify-center" target="_blank" href="">
-                        <div class="vdo-btn flex justify-center items-center">
+                        <div class="vdo-btn flex justify-center items-center transition-all duration-300 ease-in-out">
                             <p
                                 class="vdo-text mr-4 text-white text-[20px] xl:text-[30px] font-normal font-[MazdaTypeTH]">
                                 Visit site
@@ -456,474 +475,354 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
-    gsap.registerPlugin(ScrollTrigger)
+    document.addEventListener("DOMContentLoaded", function () {
+        AOS.init();
+        gsap.registerPlugin(ScrollTrigger)
 
-    // setTimeout(() => {
-    //     gsap.to('#swiper1 .slide1', {
-    //         yPercent: -200,
-    //         scrollTrigger: {
-    //             trigger: '.banner',
-    //             start: 'top top',
-    //             end: 'bottom top',
-    //             scrub: true,
-    //             scrub: 0.5,
-    //         }
-    //     });
+        var swiper = new Swiper('#swiper1', {
+            slidesPerView: 2,
+            speed: 700,
 
-    //     gsap.to('#swiper1 .slide2', {
-    //         yPercent: -200,
-    //         scrollTrigger: {
-    //             trigger: '.banner',
-    //             start: 'top top',
-    //             end: 'bottom top',
-    //             scrub: true,
-    //             scrub: 0.5,
-    //         }
-    //     });
-
-    //     gsap.to('#swiper1 .slide3', {
-    //         yPercent: -200,
-    //         scrollTrigger: {
-    //             trigger: '.banner',
-    //             start: 'top top',
-    //             end: 'bottom top',
-    //             scrub: true,
-    //             scrub: 0.5,
-    //         }
-    //     });
-    // }, 300)
-
-    var swiper = new Swiper('#swiper1', {
-        slidesPerView: 2,
-        speed: 700,
-
-        loop: true,
-        centeredSlides: true,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-        },
-        breakpoints: {
-            0: {
-                spaceBetween: 10,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
             },
-            1024: {
-                spaceBetween: 30,
+            breakpoints: {
+                0: {
+                    spaceBetween: 10,
+                },
+                1024: {
+                    spaceBetween: 30,
+                }
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        var swiper = new Swiper('#swiper2', {
+            slidesPerView: 3,
+            speed: 700,
+            spaceBetween: 30,
+            loop: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    allowTouchMove: false,
+                },
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        var swiper = new Swiper('#swiper3', {
+            speed: 700,
+            loop: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                    allowTouchMove: false,
+                },
+            },
+            pagination: {
+                el: '.swiper-pagination3',
+                clickable: true,
+            },
+        });
+
+        var swiper = new Swiper('#swiper4', {
+            speed: 700,
+            loop: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                },
+                640: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                    allowTouchMove: false,
+                },
+            },
+            pagination: {
+                el: '.swiper-pagination4',
+                clickable: true,
+            },
+        });
+
+        let cards = document.querySelectorAll('.context-wrapper');
+
+        cards.forEach((item) => {
+            item.addEventListener('click', () => {
+                const textElement = item.querySelector('.hide-text');
+                const textContextElement = item.querySelector('.context-text');
+                const arrowElement = item.querySelector('.arrows');
+                const context = item.querySelector('.context');
+
+                const isCollapsed = textElement.classList.contains('h-2');
+
+                textElement.classList.toggle('h-auto', isCollapsed);
+                textElement.classList.toggle('h-2', !isCollapsed);
+                textContextElement.classList.toggle('z-20', isCollapsed);
+
+                context.classList.toggle('h-full', isCollapsed);
+                context.classList.toggle('h-0', !isCollapsed);
+
+                arrowElement.classList.toggle('rotate-180', isCollapsed);
+            });
+        });
+
+        ScrollTrigger.refresh();
+
+        function setupScrollAnimations() {
+            // Clear existing ScrollTriggers and animations
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+            gsap.killTweensOf("*");
+
+            // Desktop (width > 1024)
+            if (window.innerWidth > 1024 || window.screen.width > 1024) {
+                gsap.set(".fade-out-text", { opacity: 1 });
+                gsap.set(".comma1", { opacity: 1, left: 100 });
+                gsap.set(".comma2", { opacity: 1, right: 100 });
+
+                gsap.set([".joy-text1", ".joy-text2", ".joy-text3", ".joy-text4"], { opacity: 1 });
+                gsap.set([".main2-wrapper", ".main3-wrapper", ".main4-wrapper"], { opacity: 0 });
+
+                ScrollTrigger.create({
+                    trigger: ".joy-text",
+                    start: "top+=15% top",
+                    endTrigger: ".joy-text2",
+                    end: "top+=15% top",
+                    pin: true,
+                    snap: 1,
+                    scrub: true,
+                    pinSpacing: false,
+                });
+
+                ScrollTrigger.create({
+                    trigger: ".joy-text2",
+                    start: "top+=15% top",
+                    endTrigger: ".joy-text3",
+                    end: "top+=15% top",
+                    pin: true,
+                    snap: 1,
+                    scrub: true,
+                    pinSpacing: false,
+                });
+
+                ScrollTrigger.create({
+                    trigger: ".joy-text3",
+                    start: "top+=15% top",
+                    endTrigger: ".joy-text4",
+                    end: "top+=15% top",
+                    pin: true,
+                    snap: 1,
+                    scrub: true,
+                    pinSpacing: false,
+                });
+
+                gsap.to(".joy-text", {
+                    opacity: 0,
+                    duration: 0.3,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger: ".joy-text2",
+                        start: "top top",
+                        end: "top top",
+                        toggleActions: "play none none reverse",
+                    }
+                });
+
+                gsap.to(".joy-text2", {
+                    opacity: 1,
+                    duration: 0.3,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger: ".joy-text2",
+                        start: "top top",
+                        end: "top top",
+                        toggleActions: "play none none reverse",
+                    }
+                });
+
+                gsap.to(".joy-text2", {
+                    opacity: 0,
+                    duration: 0.3,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger: ".joy-text3",
+                        start: "top top",
+                        toggleActions: "play none none reverse",
+                    }
+                });
+
+                gsap.to(".joy-text3", {
+                    opacity: 1,
+                    duration: 0.3,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger: ".joy-text3",
+                        start: "top top",
+                        toggleActions: "play none none reverse",
+                    }
+                });
+
+                gsap.to(".joy-text3", {
+                    opacity: 0,
+                    duration: 0.3,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger: ".joy-text4",
+                        start: "top top",
+                        toggleActions: "play none none reverse",
+                    }
+                });
+
+                gsap.to(".joy-text4", {
+                    opacity: 1,
+                    duration: 0.3,
+                    ease: "power1.inOut",
+                    scrollTrigger: {
+                        trigger: ".joy-text4",
+                        start: "top top",
+                        toggleActions: "play none none reverse",
+                    }
+                });
+
+                gsap.to(".main2-wrapper", {
+                    opacity: 1,
+                    duration: 0.5,
+                    ease: "power1.out",
+                    scrollTrigger: {
+                        trigger: ".joy-text2",
+                        start: "top top",
+                        toggleActions: "play none none reverse",
+                    }
+                });
+
+                gsap.to(".main3-wrapper", {
+                    opacity: 1,
+                    duration: 0.5,
+                    ease: "power1.out",
+                    scrollTrigger: {
+                        trigger: ".joy-text3",
+                        start: "top top",
+                        end: "bottom top",
+                        toggleActions: "play none none reverse",
+                    }
+                });
+
+                gsap.to(".main4-wrapper", {
+                    opacity: 1,
+                    duration: 0.5,
+                    ease: "power1.out",
+                    scrollTrigger: {
+                        trigger: ".joy-text4",
+                        start: "top top",
+                        end: "bottom top",
+                        toggleActions: "play none none reverse",
+                    }
+                });
+
+                gsap.to(".fade-out-text", {
+                    opacity: 0,
+                    scrollTrigger: {
+                        trigger: ".mainsec",
+                        start: "top+=34% top",
+                        end: "top+=52.5% top",
+                        pin: ".fade-out-text",
+                        scrub: true,
+                    }
+                });
+
+                gsap.to(".comma2", {
+                    opacity: 0,
+                    right: 180,
+                    scrollTrigger: {
+                        trigger: ".mainsec",
+                        start: "top+=34% top",
+                        end: "top+=12.5% top",
+                        pin: ".comma2",
+                        scrub: true,
+                    }
+                });
+
+                gsap.to(".comma1", {
+                    opacity: 0,
+                    left: 160,
+                    scrollTrigger: {
+                        trigger: ".mainsec",
+                        start: "top+=34% top",
+                        end: "top+=12.5% top",
+                        pin: ".comma1",
+                        scrub: true,
+                    }
+                });
             }
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
 
-    var swiper = new Swiper('#swiper2', {
-        slidesPerView: 3,
-        speed: 700,
-        spaceBetween: 30,
-        loop: true,
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-            },
-            640: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 1.5,
-                spaceBetween: 30,
-            },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 40,
-                allowTouchMove: false,
-            },
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
+            // Mobile (≤ 1024)
+            else {
+                gsap.set(".comma1", { opacity: 1, left: 0, y: -80 });
+                gsap.set(".comma2", { opacity: 1, right: 0, y: 280 });
+            }
 
-    var swiper = new Swiper('#swiper3', {
-        speed: 700,
-        loop: true,
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-            },
-            640: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 1.5,
-                spaceBetween: 30,
-            },
-            1024: {
-                slidesPerView: 4,
-                spaceBetween: 40,
-                allowTouchMove: false,
-            },
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
+            // Refresh ScrollTrigger layout after DOM changes
+            ScrollTrigger.refresh();
+        }
 
-    var swiper = new Swiper('#swiper4', {
-        speed: 700,
-        loop: true,
-        breakpoints: {
-            0: {
-                slidesPerView: 1.5,
-                spaceBetween: 20,
-            },
-            640: {
-                slidesPerView: 1.5,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 2.5,
-                spaceBetween: 30,
-            },
-            1024: {
-                slidesPerView: 5,
-                spaceBetween: 40,
-                allowTouchMove: false,
-            },
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
+        // Initial setup
+        setupScrollAnimations();
 
-    let cards = document.querySelectorAll('.context-wrapper');
-
-    cards.forEach((item) => {
-        item.addEventListener('click', () => {
-            const textElement = item.querySelector('.hide-text');
-            const textContextElement = item.querySelector('.context-text');
-            const arrowElement = item.querySelector('.arrows');
-            const context = item.querySelector('.context');
-
-            const isCollapsed = textElement.classList.contains('h-2');
-
-            textElement.classList.toggle('h-auto', isCollapsed);
-            textElement.classList.toggle('h-2', !isCollapsed);
-            textContextElement.classList.toggle('z-20', isCollapsed);
-
-            context.classList.toggle('h-full', isCollapsed);
-            context.classList.toggle('h-0', !isCollapsed);
-
-            arrowElement.classList.toggle('rotate-180', isCollapsed);
+        // Re-run on window resize (debounced for performance)
+        let resizeTimeout;
+        window.addEventListener("resize", () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(() => {
+                setupScrollAnimations();
+            }, 250);
         });
+
     });
 
-    const challengeTop = document.querySelector(".challenge").getBoundingClientRect().top + window.scrollY;
-    const joyText = document.querySelector(".joy-text"); // Add this class to your element
-
-    const joyTextTop = joyText.getBoundingClientRect().top + window.scrollY;
-
-    const distance = joyTextTop - challengeTop;
-
-    console.log("Distance from .challenge top to .joy-text:", distance, "px");
-
-    // ScrollTrigger.create({
-    //     trigger: ".mainsec",
-    //     start: "top+=6% top",
-    //     end: "bottom 20%",
-    //     scrub: 0.6,
-    //     pin: ".joy-text",
-    //     pinSpacing: false,
-    //     anticipatePin: 1,
-    //     // markers: true,
-    // });
-
-    // ScrollTrigger.create({
-    //     trigger: ".mainsec2",
-    //     start: "top+=1% top",
-    //     end: "bottom+=20% buttom",
-    //     scrub: 0.6,
-    //     pin: ".joy-text2",
-    //     anticipatePin: 1,
-    //     // markers: true,
-    //     onEnter: () => {
-    //         gsap.to(".joy-text", { opacity: 0, duration: 0.3, ease: "power2.out" });
-    //     },
-    //     onLeaveBack: () => {
-    //         gsap.to(".joy-text", { opacity: 1, duration: 0.3, ease: "power2.out" });
-    //     }
-    // });
-
-    // ScrollTrigger.create({
-    //     trigger: ".mainsec3",
-    //     start: "top+=1% top",
-    //     end: "bottom+=1% buttom",
-    //     scrub: 0.6,
-    //     pin: ".joy-text3",
-    //     anticipatePin: 1,
-    //     // markers: true,
-    //     onEnter: () => {
-    //         gsap.to(".joy-text2", { opacity: 0, duration: 0.3, ease: "power2.out" });
-    //     },
-    //     onLeaveBack: () => {
-    //         gsap.to(".joy-text2", { opacity: 1, duration: 0.3, ease: "power2.out" });
-    //     }
-    // });
-
-    gsap.set(".mainsec3", { opacity: 0 });
-    gsap.set(".joy-text2", { opacity: 0 });
-    gsap.set(".joy-text3", { opacity: 0 });
-    gsap.set(".joy-text4", { opacity: 0 });
-    gsap.set(".mainsec, .mainsec2, .mainsec3", { opacity: 0 });
-
-    [".mainsec", ".mainsec2", ".mainsec3"].forEach((selector) => {
-        gsap.to(selector, {
-            scrollTrigger: {
-                trigger: selector,
-                start: "top 80%",
-                toggleActions: "play none none reverse"
-            },
-            opacity: 1,
-            duration: 0.6,
-            ease: "power2.out"
-        });
-    });
-
-    ScrollTrigger.create({
-        trigger: ".mainsec",
-        start: "top+=6.5% top",
-        end: "bottom top",
-        scrub: true,
-        pin: ".joy-text",
-        pinSpacing: false,
-        anticipatePin: 1,
-        onEnter: () => {
-            setActiveSection("mainsec");
-        },
-        onLeaveBack: () => {
-            setActiveSection("mainsec");
-        }
-    });
-
-    ScrollTrigger.create({
-        trigger: ".mainsec2",
-        start: "top+=1% top",
-        end: "bottom top",
-        scrub: true,
-        pin: ".joy-text2",
-        pinSpacing: false,
-        anticipatePin: 1,
-        onEnter: () => {
-            setActiveSection("mainsec2");
-        },
-        onLeaveBack: () => {
-            setActiveSection("mainsec2");
-        }
-    });
-
-    ScrollTrigger.create({
-        trigger: ".mainsec3",
-        start: "top+=1% top",
-        end: "bottom top",
-        scrub: true,
-        pin: ".joy-text3",
-        pinSpacing: false,
-        anticipatePin: 1,
-        onEnter: () => {
-            setActiveSection("mainsec3");
-        },
-        onLeaveBack: () => {
-            setActiveSection("mainsec3");
-        }
-    });
-
-    ScrollTrigger.create({
-        trigger: ".mainsec4",
-        start: "top+=1% top",
-        end: "bottom top",
-        scrub: true,
-        markers: true,
-        pin: ".joy-text4",
-        pinSpacing: false,
-        anticipatePin: 1,
-        onEnter: () => {
-            setActiveSection("mainsec4");
-        },
-        onLeaveBack: () => {
-            setActiveSection("mainsec4");
-        }
-    });
-
-    ScrollTrigger.create({
-        trigger: ".mainsec2",
-        start: "top+=1% top",
-        end: "bottom top",
-        scrub: true,
-        pin: ".mainsec2",
-        pinSpacing: false,
-        anticipatePin: 1,
-        onEnter: () => {
-            setActiveSection("mainsec2");
-            gsap.to(".joy-text", { opacity: 0, duration: 0.1, ease: "power2.out" });
-            gsap.to(".joy-text2", { opacity: 1, duration: 0.1, ease: "power2.out" });
-        },
-        onLeaveBack: () => {
-            setActiveSection("mainsec");
-            gsap.to(".joy-text", { opacity: 1, duration: 0.1, ease: "power2.out" });
-            gsap.to(".joy-text2", { opacity: 0, duration: 0.1, ease: "power2.out" });
-        }
-    });
-
-    ScrollTrigger.create({
-        trigger: ".mainsec3",
-        start: "top+=1% top",
-        end: "bottom top",
-        scrub: true,
-        pin: ".mainsec3",
-        pinSpacing: false,
-        anticipatePin: 1,
-        onEnter: () => {
-            setActiveSection("mainsec3");
-            gsap.to(".joy-text2", { opacity: 0, duration: 0.3, ease: "power2.out" });
-            gsap.to(".joy-text3", { opacity: 1, duration: 0.3, ease: "power2.out" });
-        },
-        onLeaveBack: () => {
-            setActiveSection("mainsec2");
-            gsap.to(".joy-text2", { opacity: 1, duration: 0.3, ease: "power2.out" });
-            gsap.to(".joy-text3", { opacity: 0, duration: 0.3, ease: "power2.out" });
-        }
-    });
-
-    ScrollTrigger.create({
-        trigger: ".mainsec4",
-        start: "top+=1% top",
-        end: "top+=1.5% top",
-        scrub: true,
-        pin: ".mainsec4",
-        pinSpacing: false,
-        anticipatePin: 1,
-        onEnter: () => {
-            setActiveSection("mainsec4");
-            gsap.to(".joy-text3", { opacity: 0, duration: 0.3, ease: "power2.out" });
-            gsap.to(".joy-text4", { opacity: 1, duration: 0.3, ease: "power2.out" });
-        },
-        onLeaveBack: () => {
-            setActiveSection("mainsec3");
-            gsap.to(".joy-text3", { opacity: 1, duration: 0.3, ease: "power2.out" });
-            gsap.to(".joy-text4", { opacity: 0, duration: 0.3, ease: "power2.out" });
-        }
-    });
-
-    // gsap.to(".mainsec2", {
-    //     scrollTrigger: {
-    //         trigger: ".mainsec2",
-    //         start: "top 30%",
-    //         toggleActions: "play none none reverse",
-    //         // markers: true,
-    //     },
-    //     opacity: 1,
-    //     duration: 0.6,
-    //     ease: "power2.out"
-    // });
-
-    // gsap.to(".mainsec3", {
-    //     scrollTrigger: {
-    //         trigger: ".mainsec3",
-    //         start: "top 80%",
-    //         toggleActions: "play none none reverse",
-    //         // markers: true,
-    //     },
-    //     opacity: 1,
-    //     duration: 0.6,
-    //     ease: "power2.out"
-    // });
-
-    // gsap.to(".mainsec4", {
-    //     scrollTrigger: {
-    //         trigger: ".mainsec4",
-    //         start: "top 80%",
-    //         toggleActions: "play none none reverse",
-    //         // markers: true,
-    //     },
-    //     opacity: 1,
-    //     duration: 0.6,
-    //     ease: "power2.out"
-    // });
-
-
-    // ScrollTrigger.create({
-    //     trigger: ".mainsec4",
-    //     start: "top+=1% top",
-    //     end: "bottom top",
-    //     scrub: true,
-    //     pin: ".mainsec4",
-    //     pinSpacing: false,
-    //     anticipatePin: 1,
-    //     onEnter: () => {
-    //         setActiveSection("mainsec4");
-    //     },
-    //     onLeaveBack: () => {
-    //         setActiveSection("mainsec3");
-    //     }
-    // });
-
-
-    gsap.set(".fade-out-text", { opacity: 1 });
-    gsap.set(".comma1", { opacity: 1 , left: 100});
-    gsap.set(".comma2", { opacity: 1 , right: 100});
-
-    gsap.to(".fade-out-text", {
-        opacity: 0,
-        scrollTrigger: {
-            trigger: ".mainsec",
-            start: "top+=6% top",
-            end: "top+=12.5% top",
-            pin: ".fade-out-text",
-            scrub: true,
-            // markers: true,
-        }
-    });
-
-    gsap.to(".comma2", {
-        opacity: 0,
-        right: 180,
-        scrollTrigger: {
-            trigger: ".mainsec",
-            start: "top+=6% top",
-            end: "top+=12.5% top",
-            pin: ".comma2",
-            scrub: true,
-            // markers: true,
-        }
-    });
-
-    gsap.to(".comma1", {
-        opacity: 0,
-        left: 160,
-        scrollTrigger: {
-            trigger: ".mainsec",
-            start: "top+=6% top",
-            end: "top+=12.5% top",
-            pin: ".comma1",
-            scrub: true,
-            // markers: true,
-        }
-    });
-
-    function setActiveSection(sectionClass) {
-        document.querySelectorAll("mainsec, mainsec2, mainsec3, mainsec4").forEach(el => {
-            el.classList.remove("active");
-        });
-        document.querySelector("." + sectionClass)?.classList.add("active");
-    }
 </script>
 
 </html>
